@@ -1,4 +1,4 @@
-#Challenge: Online Resource Library - AmplifyONG
+#Challenge: Online Resource Library - AmplifyONG#
 
 ##📖 Description
 This project was created during a hackathon organized by the Faculty of Automation and Computers. The main objective was to develop the front-end for an online resource library designed to support NGOs (non-governmental organizations) across Romania. The platform aims to offer educational materials and tools for skill development in various fields.
