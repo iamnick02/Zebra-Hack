@@ -13,16 +13,16 @@ For full details of the challenge, check the official description [here](https:/
 ## 🚀 Getting Started
 ## 🔧 Installation
 Clone the repository:
-` git clone https://github.com/Hackathon-TW-2024/zebrahack2-0-birligol.git `
+- ` git clone https://github.com/Hackathon-TW-2024/zebrahack2-0-birligol.git `
 Navigate to the project directory:
-` cd zebrahack2-0-birligol-main `
+- ` cd zebrahack2-0-birligol-main `
 
 ## ▶️ Run Locally
 Since this project is static (HTML, CSS, JavaScript), you can run it directly in your browser:
 1. Open home.html or the main file in any modern web browser.
 2. Alternatively, use a live server:
-` npm install -g live-server
-live-server `
+- ` npm install -g live-server
+- live-server `
 
 ## 🎨 Project Structure
 📂 zebrahack2-0-birligol-main/
