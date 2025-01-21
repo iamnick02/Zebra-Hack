@@ -1,30 +1,30 @@
-#Challenge: Online Resource Library - AmplifyONG#
+# Challenge: Online Resource Library - AmplifyONG#
 
-##📖 Description
+## 📖 Description
 This project was created during a hackathon organized by the Faculty of Automation and Computers. The main objective was to develop the front-end for an online resource library designed to support NGOs (non-governmental organizations) across Romania. The platform aims to offer educational materials and tools for skill development in various fields.
 
-##🏆 Key Features
+## 🏆 Key Features
 Responsive Dashboard: A modern, user-friendly interface with seamless navigation.
 Personalized Recommendations: Users receive tailored resources based on their interests and quiz results.(Not implemented yet)
 Interactive Quizzes: Allows users to evaluate their knowledge and receive appropriate resources.
 Resource Library: Includes search functionality, filtering by level (beginner/intermediate/advanced), and categories.(Not implemented yet)
 For full details of the challenge, check the official description [here](https://hackathon-tw-2024.github.io/challenge.html?file=challenges/3.md).
 
-##🚀 Getting Started
-##🔧 Installation
+## 🚀 Getting Started
+## 🔧 Installation
 Clone the repository:
 git clone https://github.com/Hackathon-TW-2024/zebrahack2-0-birligol.git
 Navigate to the project directory:
 cd zebrahack2-0-birligol-main
 
-##▶️ Run Locally
+## ▶️ Run Locally
 Since this project is static (HTML, CSS, JavaScript), you can run it directly in your browser:
 1. Open home.html or the main file in any modern web browser.
 2. Alternatively, use a live server:
 npm install -g live-server
 live-server
 
-##🎨 Project Structure
+## 🎨 Project Structure
 📂 zebrahack2-0-birligol-main/
 ├── 📁 .github/             # GitHub workflows and configurations
 ├── 📁 css/                 # Stylesheets
@@ -46,13 +46,13 @@ live-server
 ├── template3.html          # Template example 3
 └── README.md               # Documentation file
 
-##🌟 How It Works
-##🖥️ Key Pages
+## 🌟 How It Works
+## 🖥️ Key Pages
 Home: Introduction and overview of the platform.
 Library: Browse and filter resources.
 Login: Simulated authentication and interest selection.
 Dashboard: View personalized recommendations and activity summary.
 Quizzes: Interactive quizzes to evaluate knowledge levels.
 
-📱 Responsive Design
+## 📱 Responsive Design
 The project is fully optimized for mobile, tablet, and desktop devices.
