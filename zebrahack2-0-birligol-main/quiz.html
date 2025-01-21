@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-uri Interactive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .quiz-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .quiz-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .quiz-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .quiz-card h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .quiz-card button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz-card button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-card {
+                width: 90%;
+            }
+        }
+        #submit {
+  background-color: #28a745; /* Verde */
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block; /* Asigură că ocupă un rând */
+  margin: 20px auto; /* Centrat */
+}
+
+#submit:hover {
+  background-color: #218838; /* Verde mai închis */
+  transform: translateY(-3px); /* Mică ridicare la hover */
+}
+
+#submit:active {
+  background-color: #1e7e34; /* Verde și mai închis */
+  transform: translateY(0); /* Revine la poziția inițială */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz-uri Interactive</h1>
+        <p>Alege un quiz și evaluează-ți cunoștințele!</p>
+    </header>
+    <div class="quiz-links">
+        <div class="quiz-card">
+            <img src="images/quiz1.jpg" alt="Quiz 1">
+            <h3>Introducere în Programare</h3>
+            <button onclick="window.open('qui1.html', '_blank')">Începe Quiz-ul</button>
+        </div>
+        <div class="quiz-card">
+            <img src="images/quiz2.jpg" alt="Quiz 2">
+            <h3>Dezvoltare Web</h3>
+            <button onclick="window.open('quiz2.html', '_blank')">Începe Quiz-ul</button>
+        </div>
+        <div class="quiz-card">
+            <img src="images/quiz3.jpg" alt="Quiz 3">
+            <h3>Algoritmi și Structuri de Date</h3>
+            <button onclick="window.open('quiz3.html', '_blank')">Începe Quiz-ul</button>
+        </div>
+    </div>
+</body>
+</html>

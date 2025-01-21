@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2: Dezvoltare Web</title>
+    <script defer src="quiz2.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .answers button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .answers button:hover {
+            background-color: #0056b3;
+        }
+        #submit {
+  background-color: #28a745; /* Verde */
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block; /* Asigură că ocupă un rând */
+  margin: 20px auto; /* Centrat */
+}
+
+#submit:hover {
+  background-color: #218838; /* Verde mai închis */
+  transform: translateY(-3px); /* Mică ridicare la hover */
+}
+
+#submit:active {
+  background-color: #1e7e34; /* Verde și mai închis */
+  transform: translateY(0); /* Revine la poziția inițială */
+}
+#back-to-library {
+  background-color: #6c757d; /* Gri */
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block; /* Centrat */
+  margin: 10px auto; /* Spațiu față de celelalte elemente */
+}
+
+#back-to-library:hover {
+  background-color: #5a6268; /* Gri mai închis */
+  transform: translateY(-3px); /* Mică ridicare la hover */
+}
+
+#back-to-library:active {
+  background-color: #4e555b; /* Gri și mai închis */
+  transform: translateY(0); /* Revine la poziția inițială */
+}
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz: Dezvoltare Web</h1>
+        <div id="quiz"></div>
+        <button id="submit" style="display:none;">Vezi Rezultatul</button>
+        <div id="result" style="margin-top:20px;"></div>
+    </div>
+    <div>
+        <button id="back-to-library" onclick="window.location.href='biblioteca.html';">Înapoi la Biblioteca</button>
+    </div>
+</body>
+</html>

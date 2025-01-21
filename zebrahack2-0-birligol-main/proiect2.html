@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmpliFY ONG - Proiect2</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="home.html">
+          <img src="images/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="main-menu">
+        <ul>
+          <li><a href="home.html">Acasă</a></li>
+          <li><a href="biblioteca.html">Biblioteca</a></li>
+          <li><a href="domenii.html" class="active">Domenii de Interes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <button class="hamburger-button">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </button>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="home.html">Acasă</a></li>
+          <li><a href="biblioteca.html">Biblioteca</a></li>
+          <li><a href="domenii.html" class="active">Domenii</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="project-container">
+    <img src="images/proiect2.jpg" alt="Proiect 2">
+    <p>
+        Sprijin pentru sănătate mentală. Acest proiect își propune să ofere consiliere psihologică gratuită pentru tinerii care se confruntă cu stresul și anxietatea.
+    </p>
+    <a href="biblioteca.html" class="back-button">Înapoi la Biblioteca</a>
+  </div>
+
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Secțiunea "O inițiativă" -->
+      <section class="init">
+        <section class="prima">
+        <p class="initiative">O inițiativă</p>
+        <br>
+        <a href="https://www.bcr.ro/ro/persoane-fizice/digital-banking/cont-online-george?utm_campaign=24!1!george!onboarding!onboarding!ro!bcr!24-BCR-002!search!anonymous-branded-bcr!v11&utm_medium=paidsearch&utm_source=google&utm_content=ga-anon-finance&utm_term=con!gads!anonymous-branded-bcr-18-55!!!anonymous-branded-bcr-general-18-55" target="_blank">
+          <img src="images/bcr.svg" alt="BCR" class="footer-logo">
+        </a>
+        <a href="https://launch.ro/" target="_blank">
+          <img src="images/launch.svg" alt="Launch" class="footer-logo">
+        </a>
+      </section>
+      <section class="spr">
+        <p class="support">Cu sprijinul</p>
+        <br>
+        <a href="https://www.bcr.ro/ro/persoane-fizice/digital-banking/cont-online-george?utm_campaign=24!1!george!onboarding!onboarding!ro!bcr!24-BCR-002!search!anonymous-branded-bcr!v11&utm_medium=paidsearch&utm_source=google&utm_content=ga-anon-finance&utm_term=con!gads!anonymous-branded-bcr-18-55!!!anonymous-branded-bcr-general-18-55" target="_blank">
+          <img src="images/bcrspr.svg" alt="BCRSSPR" class="footer-logo">
+        </a>
+        <a href="https://launch.ro/" target="_blank">
+          <img src="images/erste.svg" alt="Erste" class="footer-logo">
+        </a>
+      </section>
+    </section>
+    <br>
+      <p>Follow us on social media:</p>
+      <!-- Secțiunea de social media -->
+      <div class="social-media">
+        <ul class="social-links">
+          <li><div class="facebook-icon">
+              <a href="https://www.facebook.com/" target="_blank">
+                <div class="facebook-logo">f</div>
+              </a>
+            </div></li>
+          <li><div class="linkedin-icon">
+              <a href="https://www.linkedin.com/" target="_blank">
+                <div class="linkedin-logo">in</div>
+              </a>
+            </div></li>
+          <li><div class="twitter-icon">
+              <a href="https://www.twitter.com/" target="_blank">
+                <div class="twitter-logo">t</div>
+              </a>
+            </div></li>
+            <li><div class="youtube-icon">
+              <a href="https://www.youtube.com/" target="_blank">
+                <div class="youtube-logo">▶</div>
+              </a>
+            </div>
+        </ul>
+      </div>
+  
+      <!-- Copyright -->
+      <p class="copyright">© 2024 AmpliFY ONG. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  </body>
+  </html>

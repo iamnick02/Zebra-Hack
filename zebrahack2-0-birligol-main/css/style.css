@@ -1,0 +1,1222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .navbar {
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .navbar .main-menu ul {
+    display: flex;
+  }
+  
+  .navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .navbar ul li a i {
+    margin-right: 10px;
+  }
+  
+  .hero {
+    margin-bottom: 50px;
+  }
+  
+  .hero .container {
+    background: url('../images/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+  }
+  
+  .hero .hero-content {
+    width: 70%;
+  }
+  
+  .hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Footer */
+  .footer {
+    background-color: #0A232B; /* Fundal negru */
+    color: #A3A3B4; /* Text alb */ 
+     padding: 40px 0; /* Spațiere sus și jos */
+    text-align: left; /* Centrare text */
+    font-family: Arial, sans-serif; /* Font sans-serif */
+  }
+  
+  
+  .footer ul {
+    list-style: none; /* Eliminare bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer ul li {
+    line-height: 2.5;
+    font-size: 14px; /* Text mai mic */
+  }
+  
+  .footer a {
+    color: #fff; /* Alb pentru linkuri */
+    text-decoration: none; /* Fără subliniere */
+    transition: color 0.3s ease; /* Tranziție pentru hover */
+  }
+  
+  
+  .footer i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #fff; /* Alb pentru iconițe */
+  }
+  
+  /* Grid pentru footer */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Trei coloane egale */
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    padding: 20px 0; /* Spațiere suplimentară */
+  }
+  
+  .footer .card {
+    margin: 0; /* Eliminare margini */
+  }
+  
+  /* Copyright */
+  .footer .copyright {
+    font-size: 12px; /* Dimensiune mai mică */
+    color: #A3A3B4; /* Text gri deschis */
+    margin-top: 20px;
+  }
+  
+  /* Social media links */
+  .footer .social-media {
+    display: flex;
+    justify-content: left; /* Centrare social media */
+    gap: 15px; /* Spațiere între iconițe */
+    margin-top: 20px;
+  }
+  
+  .footer .social-media a {
+    font-size: 18px; /* Dimensiune iconițe */
+    color: #fff; /* Alb pentru iconițe */
+    transition: color 0.3s ease; /* Tranziție pentru hover */
+  }
+  
+  .footer .social-media a:hover {
+    color: #007bff; /* Albastru pe hover */
+  }
+  
+  
+  /* Utility Classes */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Card */
+  .card {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  .btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Text Classes */
+  .text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+  }
+  
+  .text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+  }
+  
+  .text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+  }
+  
+  .text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+  }
+  
+  .text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Background */
+  .bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  .bg-light {
+    background: var(--light-color);
+    color: #333;
+  }
+  
+  .bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  
+  .bg-black {
+    background: #000;
+    color: #fff;
+  }
+  
+  /* Hamburger Button */
+  .hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .mobile-menu.active {
+    right: 0;
+  }
+  
+  .mobile-menu ul {
+    margin-top: 100px;
+    padding-right: 10px;
+  }
+  
+  .mobile-menu ul li {
+    margin: 10px 0;
+  }
+  
+  .mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 960px) {
+    .text-xxl {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 670px) {
+    .navbar .main-menu {
+      display: none;
+    }
+  
+    .navbar .hamburger-button {
+      display: block;
+    }
+  
+    .hero .container {
+      background: url('../images/hero-bg-mobile.png') no-repeat;
+      background-size: 350px 400px;
+      background-position: bottom;
+      height: 770px;
+    }
+  
+    .hero .hero-content,
+    .hero .hero-text {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .hero .hero-buttons .btn {
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+    }
+  
+    .footer .card {
+      margin-right: 0;
+    }
+  
+    .footer .footer-grid > div {
+      text-align: center;
+    }
+  
+    /* Text */
+    .text-xl {
+      font-size: 1.9rem;
+    }
+  
+    .text-lg {
+      font-size: 1.5rem;
+    }
+  
+    .text-md {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .text-xxl {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Styling for Contact Section */
+  .contact-hero {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-hero .hero-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .contact-hero .hero-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .contact {
+    padding: 50px 20px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-group-inline {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .contact-form .form-group-inline .form-group {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: center;
+  }
+  
+  .contact-form button:hover {
+    background: #367fd8;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-form .form-group-inline {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+  
+  /* Form Styles */
+  form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: none;
+  }
+  
+  .form-group-inline {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-group-inline .form-group {
+    flex: 1;
+  }
+  
+  /* Button Styles */
+  .btn-shop {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 100%;
+    transition: background 0.3s;
+  }
+  
+  .btn-shop:hover {
+    background: #367fd8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-group-inline {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shop h1 {
+      font-size: 2rem;
+    }
+  
+    .shop p {
+      font-size: 1rem;
+    }
+  }
+  .contact h1 {
+    font-size: 1.8rem;
+  }
+  
+  .contact p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-details {
+    font-size: 0.85rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .portfolio-page .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-page .articlepreview {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    background: #f0f0f0; /* Fundal subtil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră pentru un efect de ridicare */
+    border-radius: 8px; /* Colțuri rotunjite */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-page .articlepreview:hover {
+    transform: scale(1.05); /* Efect de zoom la hover */
+  }
+  
+  .portfolio-page .articlepreview img {
+    width: 100%;
+    display: block;
+  }
+  
+  .portfolio-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Am redus opacitatea la 0.4 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-page .articlepreview:hover .overlay {
+    opacity: 1;
+  }
+  
+  .portfolio-page .overlay p {
+    background: rgba(0, 0, 0, 0.8); /* Fundal negru semi-transparent */
+    color: #fff; /* Text alb */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .portfolio-page .overlay p:hover {
+    background: rgba(0, 0, 0, 1); /* Fundal negru */
+  }
+  
+  .portfolio-page .overlay p:active {
+    background: rgba(0, 0, 0, 0); /* Fundal negru semi-transparent la click */
+  }
+  
+  .portfolio-page .previewtitle {
+    font-size: 1.25em;
+    margin: 10px;
+    display: block;
+    color: #333;
+  }
+  
+  .portfolio-page p {
+    margin: 0 10px 10px;
+  }
+  
+  .portfolio-page .date {
+    color: #777;
+    font-size: 0.875em;
+  }
+  
+  /* Fade-out pentru click */
+  .portfolio-page .fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  /* Media query pentru dispozitive mobile */
+  @media (max-width: 768px) {
+    .portfolio-page .articlepreview {
+      width: 100%;
+    }
+  }
+  
+  * {box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Images */
+  .slideshow-container img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Asigură-te că toate imaginile au aceeași înălțime */
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 50%; /* Face săgețile rotunde */
+    background-color: rgba(0,0,0,0.8); /* Bulina neagră */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prev {
+    top: -50px; /* Poziționează săgeata "previous" deasupra imaginii */
+  }
+  
+  .next {
+    top: calc(100% + 10px); /* Poziționează săgeata "next" dedesubtul imaginii */
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Eliminare buline gri */
+  .dot {
+    display: none;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.1s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #136cbf;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .navbar ul li a.active {
+    color: var(--primary-color);
+  }
+  
+  /*facebook*/
+  
+  .facebook-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white; /* Culoarea de fundal a Facebook */
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .facebook-logo {
+    font-size: 30px;
+    color: black; /* Culoarea textului */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .facebook-icon a {
+    text-decoration: none;
+  }
+  
+  .linkedin-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white; /* Culoarea de fundal a LinkedIn */
+    border-radius: 50%; /* Face iconița rotundă */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .linkedin-logo {
+    font-size: 20px;
+    color: black; /* Culoarea textului */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .linkedin-icon a {
+    text-decoration: none;
+  }
+  
+  .twitter-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white; /* Culoarea de fundal a Twitter */
+    border-radius: 50%; /* Face iconița rotundă */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .twitter-logo {
+    font-size: 30px;
+    color: black; /* Culoarea textului */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .twitter-icon a {
+    text-decoration: none;
+  }
+  
+  .youtube-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white; /* Culoarea de fundal a YouTube */
+    border-radius: 50%; /* Face iconița rotundă */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .youtube-logo {
+    font-size: 24px;
+    color: black; /* Culoarea textului */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .youtube-icon a {
+    text-decoration: none;
+  }
+  
+  /* Social Media Icons */
+  .social-links {
+    display: flex; /* Flexbox pentru aliniere orizontală */
+    justify-content: flex-start; /* Aliniere la stânga */
+    gap: 15px; /* Spațiu între iconițe */
+    margin-top: 20px; /* Spațiere sus față de alte elemente */
+  }
+  
+  .social-links a {
+    display: inline-flex; /* Face linkurile să fie flexibile */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Dimensiune fixă a butonului */
+    height: 40px;
+    background-color: #fff; /* Fundal alb pentru iconițe */
+    color: #000; /* Iconițe negre */
+    border-radius: 50%; /* Rotunjire completă */
+    text-decoration: none; /* Fără subliniere */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efecte hover */
+  }
+  
+  .social-links a:hover {
+    background-color: #007bff; /* Fundal albastru pe hover */
+    color: #fff; /* Text alb pe hover */
+  }
+  
+  .social-links i {
+    font-size: 1.2rem; /* Dimensiune iconițe */
+  }
+  
+  .footer-container {
+    margin-left: 80px; /* Înlocuiește 50px cu cât dorești să fie mutat */
+  }
+  
+  .init {
+    display: flex; /* Activează modul flexbox */
+    flex-wrap: wrap; /* Permite trecerea pe rânduri dacă nu încape */
+    justify-content: space-between; /* Întinde elementele pe lățimea ecranului */
+    align-items: center; /* Aliniază elementele pe verticală */
+    width: 50%; /* Se întinde pe toată lățimea ecranului */
+  }
+  
+  .init a, .init p {
+    margin: 0 10px; /* Spațiu între elemente */
+    flex: 1; /* Fiecare element ia spațiu egal */
+    text-align: center; /* Aliniază textul centrat */
+  }
+  
+  .footer-logo {
+    max-width: 100px; /* Limitează dimensiunea imaginilor (opțional) */
+    height: auto;
+  }
+  
+  /* Styling for Login Section similar to Contact Section */
+  .login {
+    padding: 50px 20px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Ocupă întregul ecran */
+    justify-content: center; /* Centrează vertical */
+  }
+  
+  .container-sm {
+    max-width: 400px; /* Dimensiunea containerului */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .login-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asigură că formularul ocupă întregul container */
+  }
+  
+  .login-form .form-group {
+    margin-bottom: 30px; /* Spațiu suplimentar sub fiecare câmp */
+  }
+  
+  .login-form label {
+    display: block;
+    font-weight: 700; /* Text îngroșat */
+    margin-bottom: 5px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px; /* Spațiu suplimentar sub fiecare câmp */
+    background-color: #f9f9f9; /* Culoare de fundal */
+  }
+  
+  .login-form input:focus {
+    border-color: var(--primary-color); /* Schimbă culoarea marginii la focus */
+    outline: none; /* Elimină bordura implicită */
+  }
+  
+  .btn-block {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  .btn-block:hover {
+    background: #367fd8;
+  }
+  
+  .contact, .footer {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Styling pentru secțiunea Biblioteca */
+  .herob {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .herob .herob-text .text-xxl {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .herob .herob-text .text-lg {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Secțiunea de filtre */
+  .filters {
+    background-color: var(--light-color);
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .filters h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .filters .filter-group {
+    margin-bottom: 15px;
+  }
+  
+  .filters label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .filters input,
+  .filters select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Secțiunea de resurse */
+  .resources {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .resources .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    text-align: center;
+  }
+  
+  .resource-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .resource-item {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resource-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .resource-item .previewtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 15px 10px 5px;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .resource-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 10px 15px;
+  }
+  
+  .resource-item .date {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin: 0 10px 10px;
+  }
+  
+  /* Video-uri educaționale */
+  .resource-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Media Queries pentru secțiunea Biblioteca */
+  @media (max-width: 768px) {
+    .resource-container {
+        gap: 15px;
+    }
+  
+    .resource-item {
+        min-width: 100%;
+    }
+  
+    .herob .herob-text .text-xxl {
+        font-size: 2.2rem;
+    }
+  
+    .herob .herob-text .text-lg {
+        font-size: 1rem;
+    }
+  }
+  .quiz-button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .quiz-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quiz-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling pentru pagina proiectului */
+  .project-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .project-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Buton Înapoi la Biblioteca */
+  .back-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #367fd8;
+    transform: translateY(-3px);
+  }
+  
+  .back-button:active {
+    background-color: #285c9a;
+    transform: translateY(0);
+  }

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca - Amplify ONG </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="home.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="home.html">Acasa</a>
+            </li>
+            <li>
+              <a href="biblioteca.html" class="active">Biblioteca</a>
+            </li>
+            <li>
+              <a href="domenii.html">Domenii de interes</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="home.html">Acasa</a>
+            </li>
+              <li>
+                <a href="biblioteca.html" class="active">Biblioteca</a>
+              </li>
+              <li>
+                <a href="domenii.html">Domenii de interes</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="herob">
+        <div class="herob-text">
+            <div class="text-xxl">Descoperă resurse valoroase</div>
+            <div class="text-lg">Ghiduri, tutoriale și materiale pentru toate nivelurile</div>
+        </div>
+    </div>
+
+    <!-- Filters Section -->
+    <div class="filters">
+        <h2>Filtrează resursele</h2>
+        <div class="filter-group">
+            <label for="search">Caută:</label>
+            <input type="text" id="search" placeholder="Cuvinte-cheie...">
+        </div>
+        <div class="filter-group">
+            <label for="level">Nivel:</label>
+            <select id="level">
+                <option value="all">Toate nivelurile</option>
+                <option value="beginner">Începător</option>
+                <option value="intermediate">Intermediar</option>
+                <option value="advanced">Avansat</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="category">Categorie:</label>
+            <select id="category">
+                <option value="all">Toate categoriile</option>
+                <option value="articole">Articole</option>
+                <option value="template-uri">Template-uri</option>
+                <option value="video-uri">Video-uri educaționale</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Resources Section -->
+    <div class="resources">
+        <h2 class="section-title">Articole</h2>
+        <div class="resource-container">
+            <div class="resource-item">
+                <a href="proiect1.html">
+                    <img src="images/proiect1.jpg" alt="Proiect 1">
+                </a>
+                <a href="proiect1.html" class="previewtitle">Comunitate și mentorat</a>
+                <p class="date">20/10/2022</p>
+            </div>
+
+            <!-- Articol 2 -->
+            <div class="resource-item">
+                <a href="proiect2.html">
+                    <img src="images/proiect2.jpg" alt="Proiect 2">
+                </a>
+                <a href="proiect2.html" class="previewtitle">Resurse și know-how</a>
+                <p class="date">01/10/2022</p>
+            </div>
+
+            <!-- Articol 3 -->
+            <div class="resource-item">
+                <a href="proiect3.html">
+                    <img src="images/proiect3.jpg" alt="Proiect">
+                </a>
+                <a href="proiect3.html" class="previewtitle">Workshop-uri</a>
+                <p class="date">10/09/2022</p>
+            </div>
+        </div>
+<br>
+        <h2 class="section-title">Template-uri</h2>
+        <div class="resource-container">
+            <div class="resource-item">
+                <a href="template1.html">
+                    <img src="images/template1.jpg" alt="Template pentru pagini web">
+                </a>
+                <a href="template1.html" class="previewtitle">Template pentru pagini web</a>
+                <p>Nivel: Începător</p>
+            </div>
+            <div class="resource-item">
+                <a href="template2.html">
+                    <img src="images/template2.jpg" alt="Template pentru pagini web">
+                </a>
+                <a href="template2.html" class="previewtitle">Template pentru pagini web</a>
+                <p>Nivel: Intermediar</p>
+            </div>
+            <div class="resource-item">
+                <a href="template3.html">
+                    <img src="images/template3.jpg" alt="Template pentru pagini web">
+                </a>
+                <a href="template3.html" class="previewtitle">Template pentru pagini web</a>
+                <p>Nivel: Avansat</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Video-uri educaționale</h2>
+<div class="resource-container">
+    <!-- Video 1 -->
+    <div class="resource-item">
+        <a href="https://www.youtube.com/watch?v=MYFgtnKMDp4" target="_blank">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/MYFgtnKMDp4" 
+                title="Introducere în HTML și CSS"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </a>
+        <a href="https://www.youtube.com/watch?v=MYFgtnKMDp4" class="previewtitle" target="_blank">Introducere în HTML și CSS</a>
+        <p>Nivel: Începător</p>
+    </div>
+    
+    <!-- Video 2 -->
+    <div class="resource-item">
+        <a href="https://www.youtube.com/watch?v=Rol0-FXOsms&list=PLpwngcHZlPac0R1SCOLMRu6FBZTTuEyF2&index=2" target="_blank">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/Rol0-FXOsms" 
+                title="Proiecte avansate cu JavaScript"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Rol0-FXOsms&list=PLpwngcHZlPac0R1SCOLMRu6FBZTTuEyF2&index=2" class="previewtitle" target="_blank">Proiecte cu JavaScript</a>
+        <p>Nivel: Avansat</p>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="resource-item">
+        <a href="https://www.youtube.com/watch?v=tcskp-ncN0I&list=PLpwngcHZlPac0R1SCOLMRu6FBZTTuEyF2&index=4" target="_blank">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/tcskp-ncN0I" 
+                title="Ghid pentru proiecte open-source"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </a>
+        <a href="https://www.youtube.com/watch?v=tcskp-ncN0I&list=PLpwngcHZlPac0R1SCOLMRu6FBZTTuEyF2&index=4" class="previewtitle" target="_blank">Ghid proiecte open-source</a>
+        <p>Nivel: Intermediar</p>
+    </div>
+</div>
+<div class="quiz-button-container">
+  <button onclick="location.href='quiz.html'" class="quiz-button">Testează-ți cunoștințele</button>
+</div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Secțiunea "O inițiativă" -->
+          <section class="init">
+            <section class="prima">
+            <p class="initiative">O inițiativă</p>
+            <br>
+            <a href="https://www.bcr.ro/ro/persoane-fizice/digital-banking/cont-online-george?utm_campaign=24!1!george!onboarding!onboarding!ro!bcr!24-BCR-002!search!anonymous-branded-bcr!v11&utm_medium=paidsearch&utm_source=google&utm_content=ga-anon-finance&utm_term=con!gads!anonymous-branded-bcr-18-55!!!anonymous-branded-bcr-general-18-55" target="_blank">
+              <img src="images/bcr.svg" alt="BCR" class="footer-logo">
+            </a>
+            <a href="https://launch.ro/" target="_blank">
+              <img src="images/launch.svg" alt="Launch" class="footer-logo">
+            </a>
+          </section>
+          <section class="spr">
+            <p class="support">Cu sprijinul</p>
+            <br>
+            <a href="https://www.bcr.ro/ro/persoane-fizice/digital-banking/cont-online-george?utm_campaign=24!1!george!onboarding!onboarding!ro!bcr!24-BCR-002!search!anonymous-branded-bcr!v11&utm_medium=paidsearch&utm_source=google&utm_content=ga-anon-finance&utm_term=con!gads!anonymous-branded-bcr-18-55!!!anonymous-branded-bcr-general-18-55" target="_blank">
+              <img src="images/bcrspr.svg" alt="BCRSSPR" class="footer-logo">
+            </a>
+            <a href="https://launch.ro/" target="_blank">
+              <img src="images/erste.svg" alt="Erste" class="footer-logo">
+            </a>
+          </section>
+        </section>
+        <br>
+          <p>Follow us on social media:</p>
+          <!-- Secțiunea de social media -->
+          <div class="social-media">
+            <ul class="social-links">
+              <li><div class="facebook-icon">
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <div class="facebook-logo">f</div>
+                  </a>
+                </div></li>
+              <li><div class="linkedin-icon">
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <div class="linkedin-logo">in</div>
+                  </a>
+                </div></li>
+              <li><div class="twitter-icon">
+                  <a href="https://www.twitter.com/" target="_blank">
+                    <div class="twitter-logo">t</div>
+                  </a>
+                </div></li>
+                <li><div class="youtube-icon">
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <div class="youtube-logo">▶</div>
+                  </a>
+                </div>
+            </ul>
+          </div>
+      
+          <!-- Copyright -->
+          <p class="copyright">© 2024 AmpliFY ONG. Toate drepturile rezervate.</p>
+        </div>
+      </footer>
+  
+      <script src="js/main.js"></script>
+</body>
+  </html>
