@@ -26,8 +26,8 @@ live-server
 
 ## 🎨 Project Structure
 📂 zebrahack2-0-birligol-main/
-├── 📁 .github/             # GitHub workflows and configurations
-├── 📁 css/                 # Stylesheets
+-├── 📁 .github/             # GitHub workflows and configurations
+-├── 📁 css/                 # Stylesheets
 ├── 📁 images/              # Project images and icons
 ├── 📁 js/                  # JavaScript files
 ├── autentificare.html      # Login page
